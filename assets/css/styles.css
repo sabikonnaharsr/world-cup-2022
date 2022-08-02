@@ -1,4 +1,4 @@
-/* <!-- google font start --> */
+/* <!-- google fonts start --> */
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+SC:wght@300;500;600&family=Lobster&family=Poppins:ital,wght@0,400;0,500;1,700&family=Roboto&display=swap');
 
@@ -54,6 +54,14 @@ body {
     color: white;
     font-size: 14px;
     margin-bottom: 25px;
+  }
+
+
+  #elipsis-words{
+    width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
 .cover-text {
@@ -162,11 +170,11 @@ ul{
     width: 20%;
     background-color: darkcyan;
     height: 18.75rem;
+    border-radius: 7px;
 }
 .list-items{
-    text-align: left;
-    padding: 20px;
-   
+    /* text-align: left; */
+    padding: 20px; 
     border-radius: 5px;
     text-align: center;
 }
@@ -204,11 +212,6 @@ ul{
 
 }
 
-
-
-/* .match-time .blog:hover {
-    background-color: red;
-} */
 
 
 /* .blog{
@@ -311,23 +314,18 @@ button.btn {
     margin-left: 10px;
 }
 
+
 /* view all button start */
 
 .view-all{
+    display: flex;
+    justify-content: center;
+}
+
+.view-btn{
     display: none;
-    background-color: darkcyan;
 
 }
-.view-all{ 
-    border: 1px solid rebeccapurple;
-    text-align: center;
-}
-
-.view-all{
-    display: block;
-}
-
-
 
 
 /* footer start */
@@ -374,12 +372,13 @@ ul li a {
 }
 
 .social{
-   
+    
     color: #FFFFFF;
     padding-top: 40px;
     font-size: 30px;
     gap: 20px;
 }
+
 
 
 /* footer p{
@@ -482,9 +481,8 @@ ul li a {
     width: 90%;
     margin: 0% auto;
     }
-.view-all{
+.view-btn{
     display: none;
-    text-align: center;
 
    }
 .footer-contact{
@@ -559,11 +557,26 @@ footer {
     .group{
         width: 100%;
     }
-    .view-all{
-        display: none;
+    /* .view-all{
+        display: block;
+        width: 171px;
+        height: 60px;
+        transform: translateX(215%);
+        margin-bottom: 20px;
+    } */
+
+    .view-btn{
+       
+        display: block;
+        padding: 10px 30px;
+        background: red;
+        color: white;
+        margin-bottom: 50px;
+        border-radius: 5px;
+}
     }
     .footer-contact{
         flex-wrap: wrap;
     }
-}
+
 /* ========= end of the responsive for tablet media ======= */
