@@ -39,6 +39,16 @@ body {
     color: white;
   }
 
+  .p-info-for-mobile{
+    display: none;
+   }
+
+
+.cover-title-for-mobile {
+    display: none;
+   }
+
+
 .p-info {
     /* width: 650px; */
     color: white;
@@ -245,6 +255,32 @@ button.btn {
 .group-text > p {
     margin-bottom: 15px;
 }
+.card-footer{
+    margin-top: 20px;
+    text-align: center;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-footer span{
+    display: block;
+    font-size: 14px;
+    color: gray;
+    margin-top: 1px;
+}
+.text-xl{
+    font-size: 22px;
+    font-weight: 500;
+}
+.block{
+    display: block;
+}
+.single-card{
+    box-shadow: 1px 2px 2px 2px rgba(128, 128, 128, 0.151);
+    padding: 30px 20px;
+    border-radius: 5px;
+}
 
 .icon {
     display: flex;
@@ -283,12 +319,16 @@ button.btn {
 
 }
 .view-all{ 
+    border: 1px solid rebeccapurple;
     text-align: center;
 }
 
 .view-all{
     display: block;
 }
+
+
+
 
 /* footer start */
 ul li{
@@ -334,10 +374,13 @@ ul li a {
 }
 
 .social{
+   
+    color: #FFFFFF;
     padding-top: 40px;
     font-size: 30px;
     gap: 20px;
 }
+
 
 /* footer p{
     text-align: center;
@@ -351,50 +394,18 @@ ul li a {
     margin-bottom: 0px;
 } */
  
-/* card */
-.card-footer{
-    margin-top: 20px;
-    text-align: center;
-}
-.card-title{
-    font-size: 18px;
-    font-weight: 500;
-}
-.card-footer span{
-    display: block;
-    font-size: 14px;
-    color: gray;
-    margin-top: 1px;
-}
-.text-xl{
-    font-size: 22px;
-    font-weight: 500;
-}
-.block{
-    display: block;
-}
-.single-card{
-    box-shadow: 1px 2px 2px 2px rgba(128, 128, 128, 0.151);
-    padding: 30px 20px;
-    border-radius: 5px;
-}
 
 
-.p-info-for-mobile{
-    display: none;
-}
-
-.cover-title-for-mobile{
-    display: none;
-}
 
 
-/* responsive start  for mobile*/
+
+
+/*======= responsive start  for mobile ========*/
 
 @media only screen and (max-width: 688px){
     body{
         width: 100%;
-        border: 2px solid red;
+       
     }
     .main-cover-banner{
         flex-direction: column;
@@ -427,23 +438,23 @@ ul li a {
         margin-top: 3px;
         /* margin-left: -37px; */
         font-size: 12px;
-    }
+        }
 
     .link-button{
         /* margin-left: 36px; */
         text-align: center;
         margin-top: 10px;
         padding: 8px 16px;
-    }
+       }
     .cover-img{
         align-self: center;
         width: 100%;
-    }
+       }
     .cover-img > img{
         width: 213px;
         margin-left: 13px;
         margin-top: 12px;
-    }
+      }
     /* .cover-img img{
         margin-bottom: -8px;
 
@@ -451,36 +462,42 @@ ul li a {
     .competition{
         flex-direction: column;
         margin-top: 30px;
-}
+      }
 
-   .player-container{
+   .player-container {
       width: 100%;
       background: none;
     
-}
-.list-items li a{
+     }
+  .list-items li a {
     background-color: #161616;
-}
-.group{
+   }
+
+  .group {
     margin: auto;
-}
-.groups{
+   }
+
+  .groups {
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
     margin: 0% auto;
-}
+    }
 .view-all{
-    display: block;
+    display: none;
+    text-align: center;
 
-}
+   }
 .footer-contact{
     flex-direction: column;
 
-}
-footer{
+} 
+
+footer {
     height: 100%;
+   }
 }
-}
+/*========= end the responsive of mobile =========*/
+
 
 
 /* responsive start for tablet */
@@ -490,7 +507,6 @@ footer{
         
     }
     
-
     .cover-img > img{
         width: 100%;
         margin-left: 0px;
@@ -550,3 +566,4 @@ footer{
         flex-wrap: wrap;
     }
 }
+/* ========= end of the responsive for tablet media ======= */
