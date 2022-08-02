@@ -24,7 +24,9 @@ body {
 .main-cover-banner {
     width: 85%;
     background: darkcyan;
-    height: 500px;
+    /* height: 500px; */
+    max-height: 600px;
+    overflow: hidden;
     border-radius: 10px;
     margin: auto;
     display: flex;
@@ -38,7 +40,7 @@ body {
   }
 
 .p-info {
-    width: 650px;
+    /* width: 650px; */
     color: white;
     font-size: 14px;
     margin-bottom: 25px;
@@ -46,24 +48,21 @@ body {
 
 .cover-text {
     margin-left: 50px;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .cover-img{
+    width: 50%;
+    align-self: flex-end;
   }
 
 .cover-img > img {
-    margin-left: 85px;
+    /* margin-left: 85px; */
     margin-top: 23px;
-    width: 454px;
+    width: 100%;
   }
 
-  /* .link-button {
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: darkcyan;
-    background-color: #E8E8E8;
-    
-  } */
+  
 
  /* btn start */
   .link-button {
@@ -141,15 +140,6 @@ body {
   
  }
 
-
-/* .match {
-    background-color: #FFFFFF;
-    margin-left: 32px;
-    padding-top: 20px;
-    border-radius: 10px;
-   
-
-} */
 
  
 /* list items sidebar */
@@ -232,8 +222,8 @@ ul{
 
 .group{
     background-color: #E8E8E8;
-    width: 300px;
-    height: 312px;
+    /* width: 300px; */
+    /* height: 312px; */
     border: none;
     border-radius: 20px;
     border: none;
@@ -259,6 +249,7 @@ button.btn {
 .icon {
     display: flex;
     margin-left: -10px;
+    margin-bottom: 15px;
 
 }
 
@@ -284,7 +275,20 @@ button.btn {
     margin-left: 10px;
 }
 
+/* view all button start */
 
+.view-all{
+    display: none;
+    background-color: darkcyan;
+
+}
+.view-all{ 
+    text-align: center;
+}
+
+.view-all{
+    display: block;
+}
 
 /* footer start */
 ul li{
@@ -297,7 +301,8 @@ ul li a {
 }
 
 footer {
-    background-color: #161616;
+    /* background-color: #161616; */
+    background-color: darkcyan;
     height: 300px;
     width: 100%;
     margin: 0;
@@ -323,7 +328,9 @@ h2 {
 }
 
 ul li a {
-    color: #B9B9B9;
+    /* color: #B9B9B9; */
+    color: #FFFFFF;
+
 }
 
 .social{
@@ -387,21 +394,26 @@ ul li a {
 @media only screen and (max-width: 688px){
     body{
         width: 100%;
-        border: 1px solid red;
+        border: 2px solid red;
     }
     .main-cover-banner{
         flex-direction: column;
+        text-align: center;
     }
     .cover-title{
         display: none;
+    }
+    .cover-text{
+        margin-left: 0;
+        width: 90%;
     }
 
     .cover-title-for-mobile{
         display: block;
         text-align: center;
         color: white;
-        margin-left: -43px;
-        width: 320px;
+        /* margin-left: -43px;
+        width: 320px; */
         margin-top: 20px;
       }
     .p-info{
@@ -411,17 +423,21 @@ ul li a {
         display: block;
         color: white;
         text-align: center;
-        width: 300px;
+        /* width: 300px; */
         margin-top: 3px;
-        margin-left: -37px;
+        /* margin-left: -37px; */
         font-size: 12px;
     }
 
     .link-button{
-        margin-left: 36px;
+        /* margin-left: 36px; */
         text-align: center;
         margin-top: 10px;
         padding: 8px 16px;
+    }
+    .cover-img{
+        align-self: center;
+        width: 100%;
     }
     .cover-img > img{
         width: 213px;
@@ -445,10 +461,17 @@ ul li a {
 .list-items li a{
     background-color: #161616;
 }
+.group{
+    margin: auto;
+}
 .groups{
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
     margin: 0% auto;
+}
+.view-all{
+    display: block;
+
 }
 .footer-contact{
     flex-direction: column;
@@ -461,19 +484,69 @@ footer{
 
 
 /* responsive start for tablet */
-@media only screen and (min-with: 689px) and (max-with: 992px) {
-       .container{
-        width: 90%;
-            grid-template-columns: repeat(2, fr);
-            
-       }
-       .main-cover-banner{
-        width: 90%;
-            display: flex;
-       }
-       .main-cover-banner{
-        width: 40%;
-            
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .main-cover-banner{
+        width: 90%; 
+        
     }
     
+
+    .cover-img > img{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .cover-title{
+        display: block;
+        color: white;
+        font-size: 45px;
+      
+      }
+    .cover-text, .cover-img{
+        width: 50%;
+   
+    }
+
+    .p-info{
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .competition{
+        flex-direction: column;
+        
+    }
+    .player-container{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+
+    }
+    .list-items{
+        display: flex;
+        gap: 8px;
+      
+    }
+    .list-items li{
+        flex: 1;
+      
+       
+    }
+    .list-items li a{
+        border: 1px solid #aaa;
+
+    }
+    .groups{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .group{
+        width: 100%;
+    }
+    .view-all{
+        display: none;
+    }
+    .footer-contact{
+        flex-wrap: wrap;
+    }
 }
