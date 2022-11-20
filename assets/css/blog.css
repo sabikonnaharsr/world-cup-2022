@@ -161,6 +161,30 @@ h1{
 .col-12{
     grid-column: span 12;
 }
+
+/* responsive */
+@media  (min-width:769px) and (max-width:992px) {
+    .col-md-4{
+        grid-column: span 4;
+    }
+    .col-md-8{
+        grid-column: span 8;
+    }
+    .col-md-12{
+        grid-column: span 12;
+    }
+    .col-md-6{
+        grid-column: span 6;
+    }
+}
+@media (max-width:768px) {
+    .blog-row .col-4,.col-3,.col-9{
+        grid-column: span 12;
+    }
+    .single-card {
+        margin: 0px 30px;
+    }
+}
 /* flexbox */
 .flex{
     display: flex;
@@ -443,6 +467,9 @@ ul li a {
         /* margin-left: -111px; */
         margin-top: 32px;
         
+    }
+    .col-6{
+        grid-column: span 6;
     }
     .cover-title{
        
